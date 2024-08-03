@@ -923,7 +923,7 @@ const buildWorkerLessConfig = async (env, client) => {
     delete fakeOutbound.streamSettings.sockopt;
     fakeOutbound.streamSettings.tlsSettings.serverName = 'google.com';
     fakeOutbound.streamSettings.wsSettings.headers.Host = 'google.com';
-    fakeOutbound.streamSettings.wsSettings.path = '/bayma';
+    fakeOutbound.streamSettings.wsSettings.path = '/';
     delete fakeOutbound.streamSettings.grpcSettings;
     delete fakeOutbound.streamSettings.tcpSettings;
     delete fakeOutbound.streamSettings.realitySettings;
